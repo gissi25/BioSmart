@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">BioSmart</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="menu_inicio">Inicio</string>
-    <string name="menu_qr">QR</string>
-    <string name="menu_resultados">Resultados</string>
-    <string name="menu_reporte">Reporte</string>
+    <string name="menu_qr">Escanear QR</string>
+    <string name="menu_resultados">Mis Resultados</string>
+    <string name="menu_reporte">Reporte Médico</string>
+    <string name="bienvenida_usuario">¡Buenos días, %1$s!</string>
+
+    <string name="login_titulo">INICIAR SESIÓN CON</string>
+    <string name="login_facial">Reconocimiento Facial</string>
+    <string name="login_huella">Huella Dactilar</string>
+    <string name="login_correo">Correo Electrónico</string>
+    <string name="login_acceso_rapido">Acceso Rápido</string>
+    <string name="login_desc_correo">Acceda con su correo y contraseña</string>
+    <string name="login_registrar">Registrarse</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

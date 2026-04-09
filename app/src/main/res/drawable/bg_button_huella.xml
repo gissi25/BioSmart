@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bg_login_huella"/>
+    <corners android:radius="16dp"/>
+</shape>
