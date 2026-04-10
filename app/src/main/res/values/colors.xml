@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg_login_facial">#E8EAF6</color>
-    <color name="bg_login_huella">#E0F2F1</color>
-    <color name="bg_login_correo">#E3F2FD</color>
-    <color name="text_login_buttons">#5C6BC0</color>
-    <color name="bg_botones_login">#ECF6F9</color>
-    <color name="border_boton_registro">#3E8ADF</color>
-    <color name="logo_smart">#9589E1</color>
-    <color name="subtitulo_gris">#A5A5A5</color>
-    <color name="black">#000000</color>
-    <color name="logo_smart_morado">#8278DA</color>
+
+         <color name="text_login_buttons">#5C6BC0</color>
+         <color name="bg_botones_login">#ECF6F9</color>
+
+
+        <color name="black">#000000</color>
+        <color name="white">#FFFFFF</color>
+        <color name="logo_smart_morado">#8278DA</color>
+        <color name="subtitulo_gris">#A5A5A5</color>
+
+        <color name="text_facial">#3F51B5</color>
+        <color name="text_facial_sub">#7986CB</color>
+        <color name="text_huella">#00796B</color>
+        <color name="text_huella_sub">#4DB6AC</color>
+        <color name="text_correo">#5C6BC0</color>
+
+        <color name="bg_login_facial">#E8EAF6</color>
+        <color name="bg_login_huella">#E0F2F1</color>
+        <color name="bg_login_correo">#ECF6F9</color>
+        <color name="border_boton_registro">#3E8ADF</color>
+
+        <color name="bg_mensaje_facial">#F0F4FF</color>
+        <color name="border_mensaje_facial">#D1D9FF</color>
+        <color name="text_instruccion_facial">#7A86A1</color>
+        <color name="borde_tarjeta_gris">#E0E0E0</color>
+        <color name="text_cancelar_gris">#A5A5A5</color>
+
+        <color name="bg_correo_edittext">#F8F9FF</color>
+        <color name="border_correo_edittext">#E0E6FF</color>
+        <color name="text_hint_correo">#A0AABD</color>
+        <color name="text_label_correo">#606A7B</color>
+
 </resources>

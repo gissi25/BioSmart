@@ -21,6 +21,15 @@
         app:destination="@id/dashboardFragment"
         app:popUpTo="@id/loginFragment"
         app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_loginFragment_to_facialFragment"
+            app:destination="@id/facialFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_correoFragment"
+            app:destination="@id/correoFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_huellaFragment"
+            app:destination="@id/huellaFragment" />
     </fragment>
     <fragment
         android:id="@+id/historialFragment"
@@ -47,5 +56,17 @@
         android:name="sv.ues.fia.eisi.biosmart.ui.medicion.TemperaturaFragment"
         android:label="fragment_temperatura"
         tools:layout="@layout/fragment_temperatura" />
+    <fragment
+        android:id="@+id/facialFragment"
+        android:name="sv.ues.fia.eisi.biosmart.ui.facial.FacialFragment"
+        android:label="FacialFragment" />
+    <fragment
+        android:id="@+id/correoFragment"
+        android:name="sv.ues.fia.eisi.biosmart.ui.correo.CorreoFragment"
+        android:label="CorreoFragment" />
+    <fragment
+        android:id="@+id/huellaFragment"
+        android:name="sv.ues.fia.eisi.biosmart.ui.huella.HuellaFragment"
+        android:label="HuellaFragment" />
 
 </navigation>
