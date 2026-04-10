@@ -31,6 +31,20 @@
 
         <string name="hello_blank_fragment">Hello blank fragment</string>
 
+        <!-- PANTALLA TEMPERATURA -->
+        <string name="temp_waiting">Espera unos minutos para finalizar tu medición</string>
+        <string name="temp_label">TEMPERATURA</string>
+        <string name="temp_unit">Celsius</string>
+        <string name="temp_value_default">00.0°</string>
+        <string name="temp_progress_label">Progreso de medición</string>
+        <string name="temp_btn_finish">Finalizar medición</string>
+
+        <!-- MENU -->
+        <string name= "men_resultado">Resultado</string>
+        <string name= "men_Perfil">Perfil</string>
+        <string name= "men_inicio">Inicio</string>
+        <string name= "men_reporte">Reporte</string>
+        <string name= "men_qr">QR</string>
 
 
 </resources>
