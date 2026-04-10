@@ -9,12 +9,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import sv.ues.fia.eisi.biosmart.R
 import sv.ues.fia.eisi.biosmart.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
 
-    // El Binding nos permite acceder a los IDs del XML sin usar findViewById
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
@@ -29,12 +29,32 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 1. Aplicamos el color morado a la palabra "Smart"
+        // 1. Configuración estética del logo
         configurarLogoColor()
 
-        // 2. Programamos el clic para ir a Registro (cuando lo tengas listo)
+        // 2. Lógica de Navegación a las diferentes opciones de Login
+        configurarNavegacion()
+    }
+
+    private fun configurarNavegacion() {
+        // Opción 1: Reconocimiento Facial
+        binding.btnFacial.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_facialFragment)
+        }
+
+        // Opción 2: Huella Dactilar
+        binding.btnHuella.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_huellaFragment)
+        }
+
+        // Opción 3: Correo Electrónico
+        binding.btnCorreo.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_correoFragment)
+        }
+
+        // Opción 4: Ir a Registro (Se activa cuando creés el fragment de registro)
         binding.btnIrARegistro.setOnClickListener {
-            // Aquí irá la navegación: findNavController().navigate(R.id.action_login_to_registro)
+            // findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
         }
     }
 
@@ -42,25 +62,21 @@ class LoginFragment : Fragment() {
         val textoCompleto = "BioSmart"
         val spannable = SpannableString(textoCompleto)
 
-        // Usamos el NUEVO color morado que definimos en colors.xml
         val colorMorado = ContextCompat.getColor(requireContext(), R.color.logo_smart_morado)
 
-        // Explicación de los números:
-        // 'B' es 0, 'i' es 1, 'o' es 2, 'S' es 3.
-        // Pintamos desde la posición 3 (la 'S') HASTA la 8 (el final, 't').
+        // "Smart" empieza en el índice 3 (B=0, i=1, o=2, S=3)
         spannable.setSpan(
             ForegroundColorSpan(colorMorado),
-            3, // start: donde empieza "Smart"
-            8, // end: donde termina
+            3,
+            8,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
-        // Asignamos el texto con el formato al TextView del logo
         binding.tvLogo.text = spannable
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null // Limpiamos el binding para evitar fugas de memoria
+        _binding = null
     }
 }

@@ -1,18 +1,36 @@
 <resources>
-    <string name="app_name">BioSmart</string>
 
-    <string name="menu_inicio">Inicio</string>
-    <string name="menu_qr">Escanear QR</string>
-    <string name="menu_resultados">Mis Resultados</string>
-    <string name="menu_reporte">Reporte Médico</string>
-    <string name="bienvenida_usuario">¡Buenos días, %1$s!</string>
+        <!-- PANTALLA LOGIN 1.0 -->
+        <string name="app_name">BioSmart</string>
+        <string name="login_titulo_sub">MONITOREO MÉDICO INTEGRAL</string>
+        <string name="login_iniciar_con">INICIAR SESIÓN CON</string>
+        <string name="login_facial">Reconocimiento Facial</string>
+        <string name="login_huella">Huella Dactilar</string>
+        <string name="login_correo">Correo Electrónico</string>
+        <string name="login_acceso_rapido">Acceso Rápido</string>
+        <string name="login_acceso_correo">Acceda con su correo y contraseña</string>
+        <string name="login_registrar">Registrarse</string>
 
-    <string name="login_titulo">INICIAR SESIÓN CON</string>
-    <string name="login_facial">Reconocimiento Facial</string>
-    <string name="login_huella">Huella Dactilar</string>
-    <string name="login_correo">Correo Electrónico</string>
-    <string name="login_acceso_rapido">Acceso Rápido</string>
-    <string name="login_desc_correo">Acceda con su correo y contraseña</string>
-    <string name="login_registrar">Registrarse</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+        <!-- PANTALLA LOGIN 1.0  RECONOCIMIENTO FACIAL-->
+        <string name="facial_instruccion">Poner rostro centrado en la cámara</string>
+        <string name="facial_cancelar">Cancelar</string>
+
+        <!-- PANTALLA LOGIN 1.0 HUELLA DACTILAR -->
+        <string name="huella_instruccion">Escanea tu huella Digital</string>
+
+        <!-- PANTALLA LOGIN 1.0 CORREO ELECTRONICO -->
+        <string name="correo_label">INGRESE SU CORREO</string>
+        <string name="pass_label">INGRESE SU CONTRASEÑA</string>
+        <string name="olvido_pass">¿HAZ OLVIDADO TU CONTRASEÑA?</string>
+        <string name="btn_iniciar_sesion">Iniciar sesión</string>
+
+        <string name="menu_inicio">Inicio</string>
+        <string name="menu_qr">Escanear QR</string>
+        <string name="menu_resultados">Resultados</string>
+        <string name="menu_reporte">Reporte</string>
+
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
 </resources>
