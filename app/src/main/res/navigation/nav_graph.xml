@@ -16,11 +16,11 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
 
-    <action
-        android:id="@+id/action_login_to_dashboard"
-        app:destination="@id/dashboardFragment"
-        app:popUpTo="@id/loginFragment"
-        app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_loginFragment_to_facialFragment"
             app:destination="@id/facialFragment" />
@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_loginFragment_to_huellaFragment"
             app:destination="@id/huellaFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
     </fragment>
     <fragment
         android:id="@+id/historialFragment"
@@ -63,7 +66,11 @@
     <fragment
         android:id="@+id/correoFragment"
         android:name="sv.ues.fia.eisi.biosmart.ui.correo.CorreoFragment"
-        android:label="CorreoFragment" />
+        android:label="CorreoFragment" >
+        <action
+            android:id="@+id/action_correoFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/huellaFragment"
         android:name="sv.ues.fia.eisi.biosmart.ui.huella.HuellaFragment"

@@ -10,6 +10,8 @@
 .DS_Store
 /build
 /captures
+# Firebase configuration file
+app/google-services.json
 .externalNativeBuild
 .cxx
 local.properties
