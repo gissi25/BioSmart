@@ -32,7 +32,7 @@ class LoginFragment : Fragment() {
         // 1. Configuración estética del logo
         configurarLogoColor()
 
-        // 2. Lógica de Navegación a las diferentes opciones de Login
+        // 2. Lógica de Navegación
         configurarNavegacion()
     }
 
@@ -52,26 +52,22 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_correoFragment)
         }
 
-        // Opción 4: Ir a Registro (Se activa cuando creés el fragment de registro)
+        // Opción 4: IR A REGISTRO (¡Ya activado!)
         binding.btnIrARegistro.setOnClickListener {
-            // findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
         }
     }
 
     private fun configurarLogoColor() {
         val textoCompleto = "BioSmart"
         val spannable = SpannableString(textoCompleto)
-
         val colorMorado = ContextCompat.getColor(requireContext(), R.color.logo_smart_morado)
 
-        // "Smart" empieza en el índice 3 (B=0, i=1, o=2, S=3)
         spannable.setSpan(
             ForegroundColorSpan(colorMorado),
-            3,
-            8,
+            3, 8,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
-
         binding.tvLogo.text = spannable
     }
 
