@@ -3,22 +3,27 @@
 
     <item
         android:id="@+id/dashboardFragment"
-        android:icon="@drawable/ic_home"
-        android:title="@string/menu_inicio" />
+        android:icon="@drawable/ic_casa"
+        android:title="@string/men_inicio" />
 
     <item
         android:id="@+id/qrFragment"
         android:icon="@drawable/ic_qr"
-        android:title="@string/menu_qr" />
+        android:title="@string/men_qr" />
 
     <item
         android:id="@+id/historialFragment"
-        android:icon="@drawable/ic_history"
-        android:title="@string/menu_resultados" />
+        android:icon="@drawable/ic_resultados"
+        android:title="@string/men_resultado" />
 
     <item
         android:id="@+id/reporteFragment"
-        android:icon="@drawable/ic_report"
-        android:title="@string/menu_reporte" />
+        android:icon="@drawable/ic_reporte"
+        android:title="@string/men_reporte" />
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/ic_perfil"
+        android:title="@string/men_Perfil" />
 
 </menu>
