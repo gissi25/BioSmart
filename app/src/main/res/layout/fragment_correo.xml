@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/actor"
-                android:text="@string/login_titulo_sub"
+                android:text=   "@string/login_titulo_sub"
                 android:textColor="@color/subtitulo_gris"
                 android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -46,5 +46,17 @@
         <string name= "men_reporte">Reporte</string>
         <string name= "men_qr">QR</string>
 
-
+        <!-- Pantalla de Registro -->
+                <string name="label_nombre_completo">NOMBRE COMPLETO</string>
+                <string name="hint_nombre">Tu nombre aquí</string>
+                <string name="label_correo_electronico">CORREO ELECTRÓNICO</string>
+                <string name="hint_correo">ejemplo@correo.com</string>
+                <string name="label_contrasena">CONTRASEÑA</string>
+                <string name="label_fecha_nacimiento">FECHA DE NACIMIENTO</string>
+                <string name="hint_fecha_nacimiento">Toca para seleccionar</string>
+                <string name="btn_registrarme">Registrarme</string>
+                <string name="btn_cancelar">Cancelar</string>
+                <string name="error_campos_vacios">Por favor, completa todos los campos</string>
+                <string name="error_password_corta">La contraseña debe tener al menos 6 caracteres</string>
+                <string name="registro_exitoso">¡Registro exitoso!</string>
 </resources>
