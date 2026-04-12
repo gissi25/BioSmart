@@ -15,3 +15,6 @@ app/google-services.json
 .externalNativeBuild
 .cxx
 local.properties
+/.idea/misc.xml
+/.idea/markdown.xml
+/.idea/deploymentTargetSelector.xml
